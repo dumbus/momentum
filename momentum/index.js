@@ -1,0 +1,1 @@
+(()=>{"use strict";const t=()=>{};window.addEventListener("DOMContentLoaded",(()=>{t()}))})();

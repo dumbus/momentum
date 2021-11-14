@@ -70,6 +70,76 @@
         <div class="quote"></div>
         <div class="author"></div>
       </div>
+
+      <div class="settings">
+        <div class="settings-popup closed-popup">
+          <h2 class="popup-header">Settings</h2>
+          <div class="close">&#10006;</div>
+          <div class="settings-language">
+            <label class="label">
+              <input type="radio" name="language" checked class="language-input-eng">
+              <span class="checkmark">English</span>
+            </label>
+            <label class="label">
+              <input type="radio" name="language"  class="language-input-ru">
+              <span class="checkmark">Русский</span>
+            </label>
+          </div>
+
+          <div class="settings-backgroung">
+            <label class="label">
+              <input type="radio" name="background" class="background-input-gt">
+              <span class="checkmark">Github collection</span>
+            </label>
+            <label class="label">
+              <input type="radio" name="background" class="background-input-un">
+              <span class="checkmark">Unsplash API</span>
+            </label>
+            <label class="label">
+              <input type="radio" name="background" class="background-input-fl">
+              <span class="checkmark">Flickr API</span>
+            </label>
+          </div>
+
+          <label class="settings-tag-container hidden">
+            <span class="settings-tag">Tag for images</span>
+            <input class="settings-background-tags" type="text" placeholder="">
+          </label>
+
+          <div class="setting-hide">
+            <label class="label ">
+              <input type="checkbox">
+              <span class="setting-hide-time">Time</span>
+            </label>
+            <label class="label">
+              <input type="checkbox">
+              <span class="setting-hide-date">Date</span>
+            </label>
+            <label class="label">
+              <input type="checkbox">
+              <span class="setting-hide-greeting">Greeting</span>
+            </label>
+            
+            <label class="label">
+              <input type="checkbox">
+              <span class="setting-hide-quote">Quote</span>
+            </label>
+            <label class="label">
+              <input type="checkbox">
+              <span class="setting-hide-weather">Weather</span>
+            </label>
+            <label class="label">
+              <input type="checkbox">
+              <span class="setting-hide-player">Audio Player</span>
+            </label>
+          </div>
+
+        </div>
+        <div class="settings-button">
+          <div class="settings-button-text">Settings</div>
+          <img src="./assets/img/settings.png" alt="settings" class="settings-button-icon">
+        </div>
+      </div>
     </footer>
   </div>
   <script src="./index.js"></script>

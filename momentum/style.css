@@ -317,14 +317,155 @@ body {
   cursor: pointer;
 }
 
-/* .container {
-  display: none;
-  min-width: 480px;
-  min-height: 100vh;
-  background: center/cover, rgba(0, 0, 0, 0.5);
-  background-blend-mode: multiply;
-  transition: background-image 1s ease-in-out;
+.settings-button {
+  position: absolute;
+  bottom: 80px;
+  right: 80px;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.settings-button-text {
+  font-size: 30px;
+}
+
+.settings-button-icon {
+  max-width: 30px;
+}
+
+.close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.settings-popup {
+  display: grid;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 100;
+  width: 650px;
+  height: 400px;
+  padding: 30px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  color: #000000;
+  font-size: 20px;
+}
+
+/* .opened {
+  display: grid;
 } */
+
+.close {
+  cursor: pointer;
+}
+
+.settings-tag-container {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.setting-hide {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.fadeIn {
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+
+.fadeOut {
+  animation-name: fade-out;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+
+.opened-popup {
+  opacity: 0.8;
+}
+
+.closed-popup {
+  display: none;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* For hiding items */
+
+.fadeInItems {
+  animation-name: fade-in-items;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+
+.fadeOutItems {
+  animation-name: fade-out-items;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+
+.opened-items {
+  opacity: 1;
+}
+
+.closed-items {
+  display: none;
+}
+
+@keyframes fade-in-items {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out-items {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+
+
 /*!
  *  owfont-regular 1.0.0 by Deniz Fuchidzhiev - http://websygen.com
  *  License - font: SIL OFL 1.1, css: MIT License

@@ -359,10 +359,6 @@ body {
   font-size: 20px;
 }
 
-/* .opened {
-  display: grid;
-} */
-
 .close {
   cursor: pointer;
 }
@@ -388,23 +384,17 @@ body {
 
 .fadeIn {
   animation-name: fade-in;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-timing-function: ease-in;
 }
 
 .fadeOut {
   animation-name: fade-out;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-timing-function: ease-in;
 }
 
-.opened-popup {
-  opacity: 0.8;
-}
 
-.closed-popup {
-  display: none;
-}
 
 @keyframes fade-in {
   from {
@@ -478,6 +468,88 @@ body {
   margin-right: 15px;
 }
 
+.todo-button {
+  position: absolute;
+  bottom: 80px;
+  left: 80px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.todo-popup {
+  display: grid;
+  position: absolute;
+  bottom: 140px;
+  left: 80px;
+  width: 600px;
+  height: 300px;
+  padding: 30px;
+  opacity: 0;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  color: #000000;
+  font-size: 20px;
+}
+
+.todo-header {
+  text-align: left;
+}
+
+.no-todos {
+  align-self: flex-start;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.todo-new-btn {
+  width: 200px;
+  height: 40px;
+  justify-self: center;
+  background-color:rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.todo-new {
+  height: 30px;
+  width: 80%;
+  justify-self: center;
+  align-self: flex-end;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.todo-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.todo-list {
+  display: grid;
+  justify-items: flex-start;
+  align-self: top;
+  justify-self: left;
+  list-style-type: none;
+}
+
+.todo-list-item {
+  text-decoration: none;
+}
+
+.todo-done {
+  text-decoration: line-through;
+}
+
+.opened-popup {
+  opacity: 0.8;
+}
+
+.closed-popup {
+  display: none;
+}
 /*!
  *  owfont-regular 1.0.0 by Deniz Fuchidzhiev - http://websygen.com
  *  License - font: SIL OFL 1.1, css: MIT License

@@ -145,6 +145,10 @@ body {
   font-size: 44px;
 }
 
+.weather-icon::before {
+  font-size: 44px;
+}
+
 .city {
   width: 170px;
   height: 34px;

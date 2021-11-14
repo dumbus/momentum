@@ -60,7 +60,7 @@ body {
   content: "\2713";  
   position: absolute;
   left: 0;
-  top: 2px;
+  top: 14px;
   font-weight: 900;
 }
 
@@ -465,7 +465,18 @@ body {
   }
 }
 
+.settings-background-tags {
+  font-size: 20px;
+}
 
+.playlist-item-container {
+  display: flex;
+  align-items: center;
+}
+
+.playlist-button {
+  margin-right: 15px;
+}
 
 /*!
  *  owfont-regular 1.0.0 by Deniz Fuchidzhiev - http://websygen.com

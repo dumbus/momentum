@@ -550,6 +550,10 @@ body {
 .closed-popup {
   display: none;
 }
+
+.todo-label {
+  grid-column-start: 2;
+}
 /*!
  *  owfont-regular 1.0.0 by Deniz Fuchidzhiev - http://websygen.com
  *  License - font: SIL OFL 1.1, css: MIT License

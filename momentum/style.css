@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Arial-MT';
-  src: url("../assets/fonts/Arial-MT.woff"); /* Путь к файлу со шрифтом */
+  src: url("./assets/fonts/Arial-MT.woff"); /* Путь к файлу со шрифтом */
  }
 
 * {
@@ -16,7 +16,7 @@ body {
   font-size: 16px;
   color: #fff;
   text-align: center;
-  background: url("../assets/img/bg.jpg") center/cover, rgba(0, 0, 0, 0.5);
+  background: url("./assets/img/bg.jpg") center/cover, rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
   transition: background-image 1s ease-in-out;
 }
@@ -102,19 +102,19 @@ body {
   width: 40px;
   height: 40px;
   background-size: 40px 40px;
-  background-image: url("../assets/svg/play.svg");
+  background-image: url("./assets/svg/play.svg");
 }
 
 .pause {
-  background-image: url("../assets/svg/pause.svg");
+  background-image: url("./assets/svg/pause.svg");
 }
 
 .play-prev {
-  background-image: url("../assets/svg/play-prev.svg");
+  background-image: url("./assets/svg/play-prev.svg");
 }
 
 .play-next {
-  background-image: url("../assets/svg/play-next.svg");
+  background-image: url("./assets/svg/play-next.svg");
 }
 
 .weather {
@@ -188,12 +188,12 @@ body {
 
 .slide-prev {
   left: 20px;
-  background-image: url("../assets/svg/slider-prev.svg");
+  background-image: url("./assets/svg/slider-prev.svg");
 }
 
 .slide-next {
   right: 20px;
-  background-image: url("../assets/svg/slider-next.svg");
+  background-image: url("./assets/svg/slider-next.svg");
 }
 
 .time {
@@ -256,7 +256,7 @@ body {
 
 .change-quote {
   margin-bottom: 30px;
-  background-image: url("../assets/svg/reload.svg");  
+  background-image: url("./assets/svg/reload.svg");  
 }
 
 .quote {

@@ -428,13 +428,13 @@ body {
 
 .fadeInItems {
   animation-name: fade-in-items;
-  animation-duration: 1s;
+  animation-duration: 0.3s;
   animation-timing-function: ease-in;
 }
 
 .fadeOutItems {
   animation-name: fade-out-items;
-  animation-duration: 1s;
+  animation-duration: 0.3s;
   animation-timing-function: ease-in;
 }
 
@@ -443,7 +443,8 @@ body {
 }
 
 .closed-items {
-  display: none;
+  opacity: 0;
+  cursor: default;
 }
 
 @keyframes fade-in-items {
